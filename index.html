@@ -1,407 +1,181 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image" href="img/banner-image.png">
-  <title>Web Development Project (P-2)</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
-  <link rel="stylesheet" href="style.css">
+  
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="style.css">
+    
 <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
 
+  <title>Sakib Talukqder</title>
+  
+  <!-- HTML -->
+  
+  <!-- Custom Styles -->
+  
+<style>
+*{
+    font-family: 'Raleway', sans-serif;
+}
+.nevigation ul li{
+  list-style: none;
+  padding: 15px;
+  color: Black;
+}
+
+@media screen and (max-width:550px){
+  .user-defind-nevigation{
+    height: 100vh;
+    width: 100vh;
+    background-color: pink;
+    display: none;
+  }
+  .nevigation ul{
+    flex-direction: column;
+  }
+}
+
+nav{
+  height: 95px;
+}
+
+
+
+h1,h2 {
+  font-weight: 200;
+  margin: 0.4em 0;
+}
+
+}
+h2 {
+  color: #888;
+  font-size: 1.5em;
+}
+
+</style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-
-     
-  <div class="white">
-    <div class="navbar">
-      
-      <div class="nav">
-        <img src="img/logo.svg" alt="Logo">
-        
-         <button onclick="w3_open()" class="nevbtn off"><i class="fa-solid fa-bars"></i></button>
-         
-        </div>
-        
-      <div id="mySidebar" class="nevigation">
-        
-        
-        <button onclick="w3_close()" class="nevbtn close"><i class="fa-solid fa-xmark"></i></button>
-         
-        
-        <ul>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#product">Product</a></li>
-          <li><a href="#testim">Testimonials</a></li>
-          <li><a href="#price">Pricing</a></li>
-          <li><a href="#FAQ">FAQ</a></li>
-          <li><a href="#Contruct">Contract Us</a></li>
-          <li><button onclick="display()" id="mode" class="btn sm">Dark</button></li>
-        </ul>
-      </div>
-     
-      
-    </div>
-    <div class="content container margin pz1">
-      <div class="left">
-<br>
-        <h1>OUR PRODUCT IS <br> <span class="red-font"> BETTER </span>THAN <br> OTHERS</h1>
-        <p>Lorem ipsum dolor sit amet, adipisicing elit.<br>Suscipit dolorum quisquam,  animi quaerat ex est iusto corporis beatae nesciunt </p>
-        <button onclick="Error()" class="btn red">Get Free Apps</button>
-        &nbsp;&nbsp;&nbsp;
-        <button onclick="Error()" class="btn blue">Go Premium</button>
-      </div>
-      <div class="right">
-        <img src="img/img-1.png" alt="">
-      </div>
-    </div>
-  </div>
+  <!-- Project -->
   
-  
-      <!-- ================
-           Container-2
-       ================ -->
-  <div id="product" class="container off">
-    <div class="margin">
-    <div class="text-aligner">
+  <div class="bg-secondary user-defind-nevigation">
+    
+        <!-- ===============
+              Nevigation
+        =================-->
+    <nav class="d-flex flex-wrap align-items-center justify-content-between ">
+    
+          <h1 class="ms-5"> <b>F<span class="text-success">å</span>HiM</b> </h1>
+    <div class="nevigation">
       
-      <p class="red-font">Why Choose Us</p>
-      <h1>Eassy Process With <span class="red-font">Best <br> Feature</span> </h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis fugit est consequuntur totam,<br> consectetur praesentium dolore deleniti amet neque nostrum fuga similique doloribus esse, velit ad dicta culpa aperiam facere.</p>
+      <ul class="me-5 d-flex flex-wrap align-items-center justify-content-between">
+        <li>
+          <button type="button" class="btn btn-primary position-relative" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Home
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              99+
+            </span>
+          </button>
+        </li>
+        
+        <li>
+          <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              About
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">My Self</a></li>
+              <li><a class="dropdown-item" href="#">Working Portfolio</a></li>
+              <li><a class="dropdown-item" href="#">Contruct Us</a></li>
+            </ul>
+          </div>
+        </li>
+        
+        <li>
+          <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              Testimonials 
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">Reviews</a></li>
+              <li><a class="dropdown-item" href="#">FAQ</a></li>
+              
+            </ul>
+          </div>
+        </li>
+        
+        <li>
+          <div class="dropdown">
+            <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+             Seetings 
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+              <li><button class="dropdown-item w-25" href="#">Dark Mode</button></li>
+              <li><button class="dropdown-item" href="#">Lite Mode</button></li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      </div>
     </div>
-
-    <div class="features">
+  </nav>
+    
+    
+    <!--===============
+        Home..  }}
+      ==============-->
+    
+    <div class="d-flex flex-wrap align-items-center justify-content-between bg-dark">
       
-      <div class="grid-content-1">
+    
+      
+      <div style="font-family: 'Poppins',sans-serif" class="ms-5 text-light">
         
-        <h2>Hart Rate Monitor<img src="img/lifeline.png" alt=""></h2>
-        
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae expedita temporibus .</p>
+        <h1 style="font-size: 2em; ">This is, 
+        <span
+        class="txt-rotate"
+        data-period="2000"
+        data-rotate='[ "Såkib Talukqder..", "Fåhim Rëådøy.." ]'></span>
+        </h1>
+        <h2>Form,, Sirajganj</h2>
         
       </div>
       
-      <div class="grid-content-1">
-        
-        <h2>Hart Rate Monitor<img src="img/lifeline.png" alt=""></h2>
-        
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae expedita temporibus .</p>
-        
+       <div class="">
+        <img class="vh-50" src="img/view.png" alt="">
       </div>
       
-      <div class="grid-content-1">
-        
-        <h2>Hart Rate Monitor<img src="img/lifeline.png" alt=""></h2>
-        
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae expedita temporibus .</p>
-        
-      </div>
-      
-      <div class="grid-img">
-        <img src="img/img-2.png" alt="">
-      </div>
-      
-      <div class="grid-content-1">
-        
-        <h2>Hart Rate Monitor<img src="img/lifeline.png" alt=""></h2>
-        
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae expedita temporibus .</p>
-        
-      </div>
-      
-      <div class="grid-content-1">
-        
-        <h2>Hart Rate Monitor<img src="img/lifeline.png" alt=""></h2>
-        
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae expedita temporibus .</p>
-        
-      </div>
-      
-      <div class="grid-content-1">
-        
-        <h2>Hart Rate Monitor<img src="img/lifeline.png" alt=""></h2>
-        
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae expedita temporibus .</p>
-        
-      </div>
-      
-    </div>
-    <br><br><br><br>
-    </div>
-  </div>
-  
-  <div  class=" white">
-    <div class="margin">
-      
-          <div class="text-aligner left">
-      <p class="red-font">Get More Details</p>
-      <h1>Awesome Technical<span class="red-font"> Space </span> </h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis fugit est consequuntur totam, consectetur praesentium dolore deleniti amet neque nostrum fuga similique doloribus esse, velit ad dicta culpa aperiam facere.</p>
     </div>
     
-    <div class="content">
-      
-      <div class="content-img-3"><img src="img/img-3.png" alt=""></div>
-      
-      <div class="tech-space">
-        
-        <div class="grig-content-2">
-          
-          <img src="img/lifeline.png" alt="">
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis reprehenderit repellendus dignissimos id beatae harum </p>
-          
-        </div>
-        
-        <div class="grig-content-2">
-          
-          <img src="img/lifeline.png" alt="">
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis reprehenderit repellendus dignissimos id beatae harum </p>
-          
-        </div>
-        
-        <div class="grig-content-2">
-          
-          <img src="img/lifeline.png" alt="">
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis reprehenderit repellendus dignissimos id beatae harum </p>
-        
-        </div>
-        
-        <div class="grig-content-2">
-          
-          <img src="img/lifeline.png" alt="">
-          
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis reprehenderit repellendus dignissimos id beatae harum </p>
-        
-        </div>
-        
-      </div>
-
-    </div>
-      <br><br><br>
-    </div>
-  </div>
-        <!-- ================
-           Container-4
-       ================ -->
-  
-  
-  <div id="testim" class="container off">
-    <div class="margin">
-      
-      <div class="text-aligner left">
-        
-        
-        <h1>Whats Buyers Says About Us</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis fugit est consequuntur totam, consectetur praesentium dolore deleniti amet neque nostrum fuga similique doloribus esse, velit ad dicta culpa aperiam facere.</p>
-      </div>
-  
-      <div class="buyer-info">
-        
-        <div class="grid-buyer">
-          
-          <img src="img/1.jpg" alt="1.">
-          
-          <h2>Ahmed Siraj</h2> <br>
-          &#11088; &#11088; &#11088; &#11088; &#11088; <br><br>
-          <h3>aahmmed@gxm.com</h3>
-          <br>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore magni suscipit illum voluptas dolor porro mollitia et harum .</p>
-          <br>
-          <button onclick="Error()" class="btn red">Read More</button>
-          
-        </div>
- 
-        <div class="grid-buyer">
-          
-          <img src="img/1.jpg" alt="1.">
-          
-          <h2>Ahmed Siraj</h2><br>
-          &#11088; &#11088; &#11088; &#11088; &#11088;<br><br>
-          <h3>aahmmed@gxm.com</h3>
-          <br>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore magni suscipit illum voluptas dolor porro mollitia et harum .</p>
-          <br>
-          <button onclick="Error()" class="btn red">Read More</button>
-          
-        </div>
-                <div class="grid-buyer">
-          
-          <img src="img/1.jpg" alt="1.">
-          <h2>Ahmed Siraj</h2><br>
-          &#11088; &#11088; &#11088; &#11088; &#11088;<br><br>
-          <h3>aahmmed@gxm.com</h3><br>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore magni suscipit illum voluptas dolor porro mollitia et harum .</p>
-          <br>
-          <button onclick="Error()" class="btn red">Read More</button>
-          
-        </div>
-
-        <div class="grid-buyer">
-          
-          <img src="img/1.jpg" alt="1.">
-          <h2>Ahmed Siraj</h2><br>
-          &#11088; &#11088; &#11088; &#11088; &#11088;
-          <h3>aahmmed@gxm.com</h3><br>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore magni suscipit illum voluptas dolor porro mollitia et harum .</p>
-          <br><br>
-          <button onclick="Error()" class="btn red">Read More</button>
-          
-        </div>
-       
-      </div>
-      
-      <br><br>
-      
-    </div>
-  </div>
-    
-  <div id="price" class="white">
-    <div class="margin">
-      
-        <div class="text-aligner left">
-          <br><br><h1>Pricing</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis fugit est consequuntur totam.</p>
-        </div>
-      
-      <div class="pricing-content">
-        
-        <div class="pricing-feedback text-aligner">
-          <br>
-          <img src="img/1.jpg" alt=""><br><br>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt, numquam. Nam ratione eligendi, consequuntur cupiditate reprehenderit enim rerum ex, suscipit inventore minima doloribus fuga dicta dolorem delectus cumque, id commodi!</p><br>
-          <h1>Fardin Ahmed</h1><br>
-          <h3>ardinan@gcm.com</h3><br>
-          <div class="star">
-           &#11088; &#11088; &#11088; &#11088; &#11088;
-           </div>
-        </div>
-        
-        <div class="pricing-price text-aligner">
-          <p>Free Shoping</p><br>
-          <h1>$225</h1><br>
-          <p><b>90 days money back Guarantee</b><br><br>
-          *The Watch <br> **Bonous:Accessories <br>**Lifetime Mobile Appa</p><br>
-          <button onclick="Error()" class="btn red">Buy Now</button><br><br>
-          <p>208 left discount till 29days</p>
-          
-        </div>
-        
-      </div>
-      
-          
-      <h1 id="FAQ" class="text-aligner">Frequently Asked Questions</h1>
-      
-      <div class="question-grid">
-        
-        <div class="question">
-          <h1>What Caused That Horaible Financial crises in 2008....??</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, odit quae laborum totam sint id voluptates maxime voluptas. Sapiente perspiciatis doloribus illum aut consectetur expedita quam vel, inventore! Quasi, aspernatur.</p>
-          
-        </div>
-        
-        <div class="question">
-          <h1>What Caused That Horaible Financial crises in 2008....??</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, odit quae laborum totam sint id voluptates maxime voluptas. Sapiente perspiciatis doloribus illum aut consectetur expedita quam vel, inventore! Quasi, aspernatur.</p>
-          
-        </div>
-        
-        
-        <div class="question">
-          <h1>What Caused That Horaible Financial crises in 2008....??</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, odit quae laborum totam sint id voluptates maxime voluptas. Sapiente perspiciatis doloribus illum aut consectetur expedita quam vel, inventore! Quasi, aspernatur.</p>
-          
-        </div>
-        
-        
-        <div class="question">
-          <h1>What Caused That Horaible Financial crises in 2008....??</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, odit quae laborum totam sint id voluptates maxime voluptas. Sapiente perspiciatis doloribus illum aut consectetur expedita quam vel, inventore! Quasi, aspernatur.</p>
-          
-        </div>
-        
-      </div>
-      
-    </div>
-  </div>
-  
-
-  
-  <div id="Contruct" class="ct-padding off">
-    <div class="margin">
-      
-
-        <div class="pricing-content">
-        <div class="pricing-feedback">
-          <br><br><br><br>
-          <p><span class="z">Get in touch</span> <br><br>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam dignissimos, error unde minus labore a inventore cupiditate ipsa dolor quasi porro doloremque consequuntur harum praesentium consequatur aliquid reiciendis mollitia officia.<br><br><br>
-          
-          <span class="z">Collaboration With</span><br><br>
-          support@feedback.net <br><br><br>
-          <span class="z"> Contruct us</span><br><br>
-          017 123 456 789</p>
-          <br><br><br><br>
-          
-        </div>
-       
-        
-        <div class="contructus">
-          <br><br><br>
-          <p class="z">Contruct Us</p>
-          <p>Lorem ipsum dolor sit amet, <br> consectetur adipisicing elit. Dolore, illum. </p>
-          <input class="input" type="text" placeholder="First Name">
-          <input class="input" type="text" placeholder="Last Name">
-          <br><br>
-          <p class="z">Comments</p>
-          <input type="text" class="comment input">
-          <br><br><br>
-          <button onclick="Error()" class="btn red">Submit</button>
-          <br><br><br><br>
-          
-        </div>
-    </div>
-    
-
-    </div>
-  </div>
-  
-  
-     <div id="features" class="white axis-50">
-       <div class="margin">
-         <div class="text-aligner left">
-          <h1>BUY NOW & SAVE 50%</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis fugit est consequuntur totam.</p>
-          <button onclick="Error()" class="btn red">BUY NOW</button>
-        </div>
+   </div>
+   
+   
+   <div id="My-self">
+     <div class="container">
+       <div class="row">
+         <div class="col-6">
+           <h1>Sakib</h1>
+         </div>
+         <div class="col-6">
+           <h1>Fahim</h1>
+         </div>
        </div>
-      </div>
-      
-      <div class="blue axis-50">
-        <div class="margin">
-
-          <div class="text-aligner left">
-          <img src="img/logo.svg" alt="Logo.svg">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis fugit est consequuntur totam.</p>
-          <a href="https://www.facebook.com/sakibtalukqder"><i class="fa-brands fa-facebook"></i></a>
-          <a href="https://www.instagram.com/sakibtalukqder"><i class="fa-brands fa-instagram"></i></a>
-          <a href="https://www.github.com/sakibtalukqder"><i class="fa-brands fa-github"></i></a>
-          <a href="https://www.twitter.com/sakibtalukqder"><i class="fa-brands fa-twitter"></i></a>
-          <p>Copyright || &copy; Sakib Talukqder (579455)</p>
-        </div>
-          
-        </div>
-      </div>
-      
-    </div>
+     </div>
+   </div>
   
- 
   
-  <script src="script.js"></script>
   
+  <!-- ==============
+     Bootstrap Js
+  ==================-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+  <script src="main.js"></script>
 </body>
 </html>
