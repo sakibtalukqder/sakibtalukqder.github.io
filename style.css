@@ -1,0 +1,90 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.nevigation ul li {
+  list-style: none;
+  padding: 15px;
+  color: Black;
+}
+
+.def-nevbtn {
+  display: none;
+}
+
+.user-def-height {
+  height: 100vh;
+}
+
+.u-d-col-2,
+.u-d-col-1 {
+  flex-basis: 50%;
+}
+
+.u-d-col-1 img {
+  width: 100%;
+}
+
+nav {
+  height: 95px;
+  align-items: center;
+}
+
+.def-font {
+  font-size: 3em;
+}
+
+h2 {
+  color: #888;
+  font-size: 1.5em;
+}
+
+@media screen and (max-width:550px) {
+
+  .u-d-row {
+    flex-direction: column;
+  }
+
+  .def-nevigation {
+    flex-direction: column;
+  }
+
+  .nevigation {
+    display: none;
+    background-color: pink;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: center;
+    z-index: 1;
+    font-family: 'Realway', sans-serif;
+  }
+
+  .def-media-nev {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .nevigation ul {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .def-nevbtn {
+    width: 40px;
+    border: none;
+    background: transparent;
+    display: block;
+    float: right;
+  }
+
+  .def-font {
+    font-size: 1.5em;
+    margin-left: 0px;
+  }
+
+  .def-font-h2 {
+    font-size: 1em;
+  }
+
+}
