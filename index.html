@@ -12,91 +12,40 @@
   <!-- Font awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
 
+  <!-- Google Fonts CDN -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:200,100,400" rel="stylesheet" type="text/css" />
+
   <link rel="stylesheet" href="style.css">
 
-  <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
 
+  <!-- $$ ___Sakib Talukqder___ $$ -->
+  <link rel="icon" type="image" href="img/banner-image.png">
   <title>Sakib Talukqder</title>
 
-
   <!-- Custom Styles -->
-  <style>
-    * {
-      font-family: 'Poppins', sans-serif;
-    }
+  <style></style>
 
-    .nevigation ul li {
-      list-style: none;
-      padding: 15px;
-      color: Black;
-    }
-
-    .user-def-height {
-      height: 100vh;
-    }
-
-    .u-d-col-2,
-    .u-d-col-1 {
-      flex-basis: 50%;
-    }
-
-    .u-d-col-1 img {
-      width: 100%;
-    }
-
-    @media screen and (max-width:550px) {
-      .user-defind-nevigation {
-        height: 100vh;
-        width: 100vh;
-        background-color: pink;
-        display: none;
-      }
-
-      .nevigation ul {
-        flex-direction: column;
-      }
-
-      .u-d-row {
-        flex-direction: column;
-      }
-
-    }
-
-    nav {
-      height: 95px;
-      align-items: center;
-
-    }
-
-    h1,
-    h2 {
-      font-weight: 200;
-      margin: 0.4em 0;
-    }
-    }
-
-    h2 {
-      color: #888;
-      font-size: 1.5em;
-    }
-  </style>
-  <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="">
+<body>
 
+  <!-- $$ ___Sakib Talukqder___ $$ -->
 
-  <!-- $$ Sakib Talukqder $$ -->
+  <div class="bg-secondary defind-nevigation">
+    <!-- =======================
+    ______ Nevigation.  }}
+   ============================ -->
+    <div class="def-nevigation d-flex falign-items-center justify-content-between">
 
+      <div class="def-media-nev">
+        <h1 class="ms-4 pt-3 fs-1"> <b>F<span class="text-danger">å</span>HiM</b> </h1>
 
-  <div class="bg-secondary user-defind-nevigation d">
-    <!-- =================
-        Nevigation
-     ================= -->
-    <nav class="d-flex falign-items-center justify-content-between ">
-      <h1 class="ms-5"> <b>F<span class="text-danger">å</span>HiM</b> </h1>
-      <div class="nevigation">
-        <ul class="me-5 d-flex flex-wrap align-items-center justify-content-between">
+        <button onclick="w3_open()" class="def-nevbtn me-4 fs-1"><i class="fa-solid fa-bars"></i></button>
+      </div>
+
+      <div id="def-nev" class="nevigation">
+        <ul class="me-5 d-flex mt-3 ">
           <li>
             <button type="button" class="btn btn-primary position-relative" data-bs-toggle="modal" data-bs-target="#exampleModal">
               Home
@@ -141,22 +90,21 @@
           </li>
         </ul>
       </div>
-    </nav>
+    </div>
   </div>
 
   <!--===============
         Home..  }}
    ================-->
-
   <div class="d-flex flex-wrap align-items-center justify-content-between bg-dark w-auto vh-100">
     <div style="" class="ms-5 text-light">
-      <h1 style="font-size: 2em; ">This is,
-        <span class="txt-rotate" data-period="2000" data-rotate='[ "Såkib Talukqder..", "Fåhim Rëådøy.." ]'></span>
+      <h1 class="def-font">This is,
+        <span class="txt-rotate" data-period="2000" data-rotate='[ "Såkib Talukqder . .", "Fåhim Rëådøy . ." ]'></span>
       </h1>
-      <h2>Form,, Sirajganj</h2>
+      <h2 class="def-font-h2">Form, Sirajganj</h2>
     </div>
     <div class="me-5">
-      <img class="vh-70 me-5" src="img/IMG_20.png" alt="">
+      <img class="vh-90 me-5" src="img/IMG_20.png" alt="">
     </div>
   </div>
 
@@ -164,7 +112,6 @@
   <!--===============
         My Self..  }}
       ==============-->
-
   <div id="self" class="py-5 d-flex bg-dark text-light">
     <div class="m-5">
       <div class="u-d-row d-flex justify-content-between">
@@ -188,10 +135,11 @@
               </ul>
               <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                  <p> <br>
-                    Sakib Talukqder<br>
+                  <p> <br> <span class="def-font text-danger"> Sakib Talukqder</span>
+                    <br>
                     Department Of Computer Technology<br>
-                    Moulvibazar Polytechnic Institute</p>
+                    Moulvibazar Polytechnic Institute
+                  </p>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex tempora unde corporis tenetur id distinctio veniam quas recusandae consequuntur repellat similique vel, eum excepturi. Odit exercitationem odio assumenda perferendis mollitia!</p>
                 </div>
                 <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
@@ -220,13 +168,10 @@
       </div>
     </div>
   </div>
-  </div>
-
 
   <!--===============
-        My Work..  }}
-      ==============-->
-
+       My Work..  }}
+    ==============-->
   <div id="self" class="d-flex bg-dark text-light align-items-center text-dark">
     <div class="m-5">
       <div class="u-d-row pb-3 mb-5 d-flex align-items-center  justify-content-between">
@@ -281,8 +226,8 @@
         <div class="u-d-col-1 d-flex align-items-center">
 
           <!-- ===============
-       Slider
-    =================-->
+     Slider
+ =================-->
           <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -325,8 +270,6 @@
       </div>
     </div>
   </div>
-
-
 
 
   <!-- ==============
@@ -403,15 +346,13 @@
     </div>
   </div>
 
-
-
-
   <!-- ==============
      Bootstrap Js
   ==================-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
   <script src="main.js"></script>
+
 </body>
 
 </html>
