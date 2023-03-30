@@ -1,4 +1,4 @@
-* {
+*{
   font-family: 'Poppins', sans-serif;
 }
 
@@ -16,9 +16,13 @@
   height: 100vh;
 }
 
+.def-margin {
+  margin: 10%;
+}
+
 .u-d-col-2,
 .u-d-col-1 {
-  flex-basis: 50%;
+  flex-basis: 45%;
 }
 
 .u-d-col-1 img {
