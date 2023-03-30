@@ -96,5 +96,4 @@ window.onload = function() {
 
 };
 
-Resources
 
