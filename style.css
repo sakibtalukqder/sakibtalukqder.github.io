@@ -15,12 +15,13 @@
 .user-def-height {
   height: 100vh;
 }
-
-.def-margin {
-  margin: 10%;
+.def-margin{
+  margin: 5%;
 }
 
-.u-d-col-2,
+.u-d-col-2{
+  flex-basis: 55%;
+}
 .u-d-col-1 {
   flex-basis: 45%;
 }
@@ -58,6 +59,7 @@ h2 {
     background-color: pink;
     flex-direction: column;
     height: 50vh;
+    width: 100%;
     justify-content: center;
     z-index: 1;
     font-family: 'Realway', sans-serif;
@@ -89,6 +91,11 @@ h2 {
 
   .def-font-h2 {
     font-size: 1em;
+  }
+  .u-d-col-1,
+  .u-d-col-2{
+    margin: 0;
+    padding: 0;
   }
 
 }
