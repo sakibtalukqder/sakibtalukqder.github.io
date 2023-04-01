@@ -32,3 +32,23 @@ function Scroll() {
 function Scroll_top() {
   document.documentElement.scrollTop = 0;
 }
+
+
+// ______{{  Dark Themes  }}______
+
+let Dark = document.getElementById("dark");
+
+Dark.onclick = function(){
+  ToggleFunctuon();
+}
+
+function ToggleFunctuon(){
+  document.body.classList.toggle("dark-mode");
+  
+  if(document.body.classList.contains("dark-mode")){
+    Dark.innerHTML = "Dark";
+  }
+  else{
+    Dark.innerHTML = "Lite";
+  }
+}
