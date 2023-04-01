@@ -240,7 +240,7 @@ h2 {
 
 }
 
-.social i {
+.social a {
   margin-right: 2px;
   z-index: 12;
   font-size: 24px;
@@ -248,34 +248,34 @@ h2 {
   transition: all 0.6s;
 }
 
-.social i:nth-child(1) {
+.social a:nth-child(1) {
   position: absolute;
   bottom: -90px;
   left: 0;
 }
 
-.social i:nth-child(2) {
+.social a:nth-child(2) {
   position: absolute;
   bottom: -90px;
   left: 35px;
   transition-delay: 0.3s;
 }
 
-.social i:nth-child(3) {
+.social a:nth-child(3) {
   position: absolute;
   bottom: -90px;
   left: 70px;
   transition-delay: 0.6s;
 }
 
-.social i:nth-child(4) {
+.social a:nth-child(4) {
   position: absolute;
   bottom: -90px;
   left: 110px;
   transition-delay: 0.9s;
 }
 
-.cs-left-side:hover .social i {
+.cs-left-side:hover .social a {
   bottom: 0;
 }
 
@@ -480,6 +480,12 @@ input[type='text'] {
   .cs-left-side {
     display: none;
   }
+
+  /* ______Footer__}}__ */
+  .def-direction {
+    flex-direction: column;
+  }
+
 }
 
 /* =======================
@@ -487,4 +493,38 @@ input[type='text'] {
    ======================= */
 .black-texy {
   color: black;
+}
+
+.def-widget {
+  flex-basis: 40%;
+}
+
+/* ========================
+     ____Scroll-Top__}}
+   ======================== */
+.def-arrow {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 25px;
+  right: 45px;
+  z-index: 99;
+  font-size: 40px;
+  border: none;
+  width: 80px;
+  height: 80px;
+  background-color: seagreen;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 550px) {
+  .def-arrow {
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+  }
 }
