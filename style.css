@@ -235,7 +235,7 @@ h2 {
 .cs-left-side .social {
   display: flex;
   position: absolute;
-  bottom: 20px;
+  bottom: 25px;
   left: 55px;
 
 }
@@ -243,8 +243,8 @@ h2 {
 .social i {
   margin-right: 2px;
   z-index: 12;
-  font-size: 23px;
-  color: darkblue;
+  font-size: 24px;
+  color: black;
   transition: all 0.6s;
 }
 
@@ -301,11 +301,11 @@ h2 {
 
 .top-div h2 {
   font-weight: 800;
-  font-size: 25px;
+  font-size: 35px;
 }
 
 .top-div p {
-  font-size: 13px;
+  font-size: 20px;
   font-weight: 800;
 }
 
@@ -427,7 +427,7 @@ input[type='text'] {
   height: 40px;
   width: 150px;
   position: absolute;
-  bottom: -140px;
+  bottom: -150px;
   color: white;
   background-color: #4b6fef;
   border-radius: 8px;
@@ -480,4 +480,11 @@ input[type='text'] {
   .cs-left-side {
     display: none;
   }
+}
+
+/* =======================
+  ______Footer__}}
+   ======================= */
+.black-texy {
+  color: black;
 }
