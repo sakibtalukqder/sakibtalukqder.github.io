@@ -1,4 +1,4 @@
-* {
+*{
   font-family: 'Raleway', sans-serif;
 }
 
@@ -42,6 +42,7 @@
   list-style: none;
   padding: 15px;
   color: var(--lite-Color);
+  cursor: pointer;
 }
 
 .def-nevbtn {
