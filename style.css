@@ -1,5 +1,38 @@
 * {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* =======================
+  ______Root Selector__}}
+   ======================= */
+:root {
+  --lite-Color: white;
+  --dark-Color: #000f0f;
+  --second-color: #353935;
+  --third-color: #4682B4;
+  --pink-color: #5C4033;
+}
+
+.dark-mode {
+  --lite-Color: black;
+  --dark-Color: #f0F2ff;
+  --second-color: #6F8FAF;
+  --third-color: #6082B6;
+  --pink-color: pink;
+}
+
+.def-background {
+  background-color: var(--dark-Color);
+  color: var(--lite-Color);
+}
+
+.def-bg-2 {
+  background-color: var(--second-color);
+  color: var(--lite-Color);
+}
+
+.def-text {
+  color: var(--lite-Color);
 }
 
 /* =======================
@@ -8,7 +41,7 @@
 .nevigation ul li {
   list-style: none;
   padding: 15px;
-  color: Black;
+  color: var(--lite-Color);
 }
 
 .def-nevbtn {
@@ -44,6 +77,12 @@ nav {
   font-size: 3em;
 }
 
+.def-user-image {
+  position: absolute;
+  bottom: 55%;
+  transform: translateY(40%);
+}
+
 h2 {
   color: #888;
   font-size: 1.5em;
@@ -61,7 +100,7 @@ h2 {
 
   .nevigation {
     display: none;
-    background-color: pink;
+    background-color: var(--pink-color);
     flex-direction: column;
     height: 50vh;
     width: 100%;
@@ -71,9 +110,17 @@ h2 {
   }
 
   .def-media-nev {
+    height: 65px;
     display: flex;
     width: 100%;
+    align-items: center;
     justify-content: space-between;
+    position: relative;
+  }
+
+  .def-media-nev h1 {
+
+    margin-top: 12px;
   }
 
   .nevigation ul {
@@ -151,7 +198,7 @@ h2 {
 .cs-card {
   height: 500px;
   width: 800px;
-  background-color: black;
+  background-color: var(--dark-Color);
   position: relative;
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
   position: relative;
@@ -282,7 +329,7 @@ h2 {
 /*left-side-end*/
 .right-side {
   width: 70%;
-  background-color: seagreen;
+  background-color: var(--third-color);
   height: 100%;
   position: relative;
   cursor: pointer;
@@ -347,7 +394,7 @@ h2 {
   width: 300px;
   border-radius: 5px;
   background-color: #fff;
-  box-shadow: 2px 2px 20px 5px #c8d2ff;
+  box-shadow: 2px 2px 20px 5px #0f0f0f;
   padding: 25px;
   box-sizing: border-box;
 }
@@ -510,10 +557,10 @@ input[type='text'] {
   bottom: 25px;
   right: 45px;
   z-index: 99;
-  font-size: 40px;
+  font-size: 30px;
   border: none;
-  width: 80px;
-  height: 80px;
+  width: 70px;
+  height: 70px;
   background-color: seagreen;
   color: white;
   cursor: pointer;
@@ -527,4 +574,9 @@ input[type='text'] {
     width: 50px;
     height: 50px;
   }
+}
+
+#dark {
+  height: 35px;
+  width: 90px;
 }
