@@ -68,20 +68,13 @@
 .u-d-col-1 img {
   width: 100%;
 }
-
-nav {
-  height: 95px;
-  align-items: center;
-}
-
 .def-font {
   font-size: 3em;
 }
 
 .def-user-image {
-  position: absolute;
-  bottom: 55%;
-  transform: translateY(40%);
+  
+  margin-bottom: 5%;
 }
 
 h2 {
@@ -90,7 +83,7 @@ h2 {
 }
 
 @media screen and (max-width:550px) {
-
+  
   .u-d-row {
     flex-direction: column;
   }
