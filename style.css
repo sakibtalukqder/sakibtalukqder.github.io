@@ -1,4 +1,4 @@
-* {
+*{
   font-family: 'Raleway', sans-serif;
 }
 
@@ -68,28 +68,24 @@
 .u-d-col-1 img {
   width: 100%;
 }
-
 .def-font {
   font-size: 3em;
 }
 
 .def-user-image {
   position: absolute;
-  top: 40%;
-  transform: translateY(-50%);
+  transform: translateY(-70%);
 }
 
 h2 {
   color: #888;
   font-size: 1.5em;
 }
-
-.xmark {
+.xmark{
   display: none;
 }
-
 @media screen and (max-width:550px) {
-
+  
   .u-d-row {
     flex-direction: column;
   }
