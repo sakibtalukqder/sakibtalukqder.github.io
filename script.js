@@ -4,14 +4,22 @@
 function w3_open() {
 
   let media_Nev = document.getElementById("def-nev");
+  let bars = document.getElementById("bars");
+  let xmark = document.getElementById("xmark");
 
-  if(media_Nev.style.display === "flex"){
+  if (media_Nev.style.display === "flex") {
     media_Nev.style.display = "none";
+    bars.style.display = "block";
+    xmark.style.display = "none";
   }
-  else{
+  else {
     media_Nev.style.display = "flex";
+    xmark.style.display = "block";
+    bars.style.display = "none";
   }
+
 }
+
 
 
 //  __{{__back Scroll__}}__
@@ -52,3 +60,4 @@ function ToggleFunctuon(){
     Dark.innerHTML = "Lite";
   }
 }
+
