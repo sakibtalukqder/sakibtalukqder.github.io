@@ -36,10 +36,16 @@
     <!-- =======================
     ______ Nevigation.  }}
    ============================ -->
-    <div class="def-nevigation d-flex align-items-center justify-content-between">
+    <div class="def-nevigation position-relative d-flex align-items-center justify-content-between">
       <div class="def-media-nev">
         <h1 class="ms-4 fs-1"> <b>F<span class="text-danger">å</span>HiM</b> </h1>
-        <button onclick="w3_open()" class="def-nevbtn me-4 fs-1"><i class="fa-solid fa-bars"></i></button>
+        <button onclick="w3_open()" class="def-nevbtn me-4 fs-1">
+          <i id="bars" class="fa-solid fa-bars"></i>
+          <span id="xmark" class="xmark">
+          <i class="fa-solid fa-xmark"></i>
+          </span>
+          </button>
+       
       </div>
       <div id="def-nev" class="nevigation">
         <ul class="me-5 d-flex mt-3 def-text">
