@@ -45,16 +45,12 @@
             <i class="fa-solid fa-xmark"></i>
           </span>
         </button>
-
       </div>
       <div id="def-nev" class="nevigation">
         <ul class="me-5 d-flex mt-3 def-text">
           <li>
             <button type="button" class="btn btn-primary position-relative" data-bs-toggle="modal" data-bs-target="#exampleModal">
               Home
-              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
-                99+
-              </span>
             </button>
           </li>
           <li>
@@ -89,17 +85,25 @@
   </div>
 
   <!--===============
-        Home..  }}
-   ================-->
-  <div class="d-flex flex-wrap align-items-center justify-content-between def-background user-def-height w-auto">
-    <div style="" class="u-d-col-1 ms-5 mt-4 w-auto def-text">
-      <h1 class="def-font">This is, <br>
-        <span class="txt-rotate" data-period="2000" data-rotate='[ "Såkib Tålukqdër . .", "Fåhim Rëådøy . ." ]'></span>
-      </h1>
-      <h2 class="def-font-h2">Department of Computer Technology</h2>
-    </div>
-    <div class="u-d-col-1 d-flex justify-content-center align-items-start position-relative">
-      <img class="def-user-image" src="img/Fm8.png" alt="">
+          Home..  }}
+     ================-->
+  <div class="container-fluid def-background">
+    <div class="mx-5">
+      <div class="row">
+        <div class="col-sm-6 position-relative">
+          <div style="" class="def-typewrite  d-flex flex-column justify-content-center w-auto def-text">
+            <h1 class="def-font">This is, <br>
+              <span class="txt-rotate" data-period="2000" data-rotate='[ "Såkib Tålukqdër . .", "Fåhim Rëådøy . ." ]'></span>
+            </h1>
+            <h2 class="def-font-h2">Department of Computer Technology</h2>
+          </div>
+        </div>
+        <div class="col">
+          <div class=" d-flex justify-content-center align-items-center">
+            <img class="w-100" src="img/Fm8.png" alt="">
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -490,21 +494,21 @@
             <div class="card-content">
               <span>
                 <div class="input-text">
-                  <input type="text" required="required">
+                  <input class="form-input" type="text" required="required">
                   <small>Name</small>
                 </div>
                 <div class="input-text">
-                  <input type="text" required="required">
+                  <input class="form-input" type="text" required="required">
                   <small>E-mail</small>
                 </div>
                 <div class="textarea">
-                  <textarea required="required"></textarea>
+                  <textarea class="form-input" required="required"></textarea>
                   <small>Message</small>
                 </div>
               </span>
             </div>
             <div class="buttons">
-              <button>SEND</button>
+              <button id="form-button">SEND</button>
             </div>
           </div>
         </div>
