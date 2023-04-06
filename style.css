@@ -79,6 +79,13 @@
   transform: translateY(-50%);
 }
 
+.def-typewrite-img {
+  position: absolute;
+  top: 100%;
+  transform: translateY(-100%);
+  padding-left: 25px;
+}
+
 h2 {
   color: #888;
   font-size: 1.5em;
