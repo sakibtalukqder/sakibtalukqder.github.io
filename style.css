@@ -87,7 +87,7 @@ h2 {
 }
 
 .def-typewrite {
-  position: absolute;
+  
   top: 50%;
   transform: translateY(-50%);
 }
