@@ -45,6 +45,10 @@
   cursor: pointer;
 }
 
+.nevigation ul li :hover {
+  color: #f0F2ff;
+}
+
 .def-nevbtn {
   display: none;
 }
@@ -73,19 +77,6 @@
   font-size: 3em;
 }
 
-.def-typewrite {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.def-typewrite-img {
-  position: absolute;
-  top: 100%;
-  transform: translateY(-100%);
-  padding-left: 25px;
-}
-
 h2 {
   color: #888;
   font-size: 1.5em;
@@ -93,6 +84,12 @@ h2 {
 
 .xmark {
   display: none;
+}
+
+.def-typewrite {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 @media screen and (max-width:550px) {
@@ -164,14 +161,10 @@ h2 {
 
   .def-typewrite {
     position: relative;
-    margin-top: 55px;
-  }
-
-  .def-typewrite-img {
-    position: relative;
-    left: -25;
 
   }
+
+
 
 }
 
@@ -467,7 +460,6 @@ input[type='text'] {
   border-bottom: 2px solid #c8d2ff;
   caret-color: #c8d2ff;
   color: #c8d2ff;
-
 }
 
 .textarea small {
