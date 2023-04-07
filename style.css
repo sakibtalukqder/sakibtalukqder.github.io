@@ -45,9 +45,7 @@
   cursor: pointer;
 }
 
-.nevigation ul li :hover {
-  color: #f0F2ff;
-}
+.nevigation ul li :hover{color: #f0F2ff;}
 
 .def-nevbtn {
   display: none;
@@ -87,7 +85,7 @@ h2 {
 }
 
 .def-typewrite {
-  
+  position: absolute;
   top: 50%;
   transform: translateY(-50%);
 }
