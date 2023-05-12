@@ -45,7 +45,7 @@
   cursor: pointer;
 }
 
-.nevigation ul li :hover{color: #f0F2ff;}
+.nevigation ul li :hover{color: #08090f;}
 
 .def-nevbtn {
   display: none;
@@ -571,9 +571,9 @@ input[type='text'] {
   z-index: 99;
   font-size: 30px;
   border: none;
-  width: 70px;
-  height: 70px;
-  background-color: seagreen;
+  width: 60px;
+  height: 60px;
+  background-color: rgb(64, 214, 129);
   color: white;
   cursor: pointer;
   padding: 15px;
